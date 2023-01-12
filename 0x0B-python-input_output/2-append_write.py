@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Append a str at end of txtfile & rtrn char count"""
+"""This module defines a file-appending function."""
 
 
 def append_write(filename="", text=""):
-    """func(str, txt to appnd)"""
-
-    with open(filename, mode='a', encoding='utf-8') as h:
-        return(h.write(text))
+    """Appends a string to the end of a UTF8 text file
+    """
+    with open(filename, "a", encoding="utf-8") as f:
+        return f.write(text)

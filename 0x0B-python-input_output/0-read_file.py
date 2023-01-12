@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""module reads textfile(UTF8) and prints STDOUT"""
+"""This module defines a text file-reading function"""
 
 
 def read_file(filename=""):
-    """Function(arg, no return)"""
-
-    with open(filename, encoding='utf-8') as h:
-        for line in h:
-            print(line, end="")
-            """like Predfined clean up Resource"""
+    """Prints the contents of a UTF8 text file"""
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")

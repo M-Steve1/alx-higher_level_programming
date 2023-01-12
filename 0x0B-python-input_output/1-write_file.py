@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""wrote string to txtfile UTF8 and rtrn # of char"""
+"""This module defines a file-writing function."""
 
 
 def write_file(filename="", text=""):
-    """function(filewritten, text wrtn)"""
-
-    with open(filename, 'w', encoding='utf-8') as h:
-        numC = h.write(text)
-        return numC
+    """Writes a string to a UTF8 text file
+    """
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
